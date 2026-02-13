@@ -1,0 +1,149 @@
+/* ── Fauna Athletics Admin Branding ──
+ * Benutzerdefiniertes CSS für das Medusa Admin-Dashboard
+ * im Fauna Athletics Markendesign.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* ── Login Page ── */
+
+/* Dark background with subtle gradient */
+[class*="LoginPage"], [class*="login"],
+[data-testid="login-page"] {
+  background: linear-gradient(170deg, #060606 0%, #0b0b0b 40%, #0a120e 100%) !important;
+}
+
+/* Hide default Medusa logo on login — we use our own branding */
+[data-testid="login-page"] img,
+.login-page img,
+[class*="login"] img[alt*="edusa"],
+[class*="login"] img[alt*="logo"] {
+  display: none !important;
+}
+
+/* Login card styling */
+[data-testid="login-page"] form,
+[class*="login"] form {
+  background-color: rgba(19, 19, 19, 0.6) !important;
+  border: 1px solid rgba(34, 34, 34, 0.4) !important;
+  border-radius: 4px !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+/* Input fields on login */
+[data-testid="login-page"] input,
+[class*="login"] input {
+  background-color: rgba(19, 19, 19, 0.5) !important;
+  border-color: rgba(34, 34, 34, 0.5) !important;
+  color: #f0f0f0 !important;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  transition: border-color 0.3s, background-color 0.3s !important;
+}
+
+[data-testid="login-page"] input:focus,
+[class*="login"] input:focus {
+  border-color: rgba(45, 106, 79, 0.6) !important;
+  background-color: rgba(19, 19, 19, 0.7) !important;
+  box-shadow: 0 0 0 2px rgba(45, 106, 79, 0.15) !important;
+}
+
+[data-testid="login-page"] input::placeholder,
+[class*="login"] input::placeholder {
+  color: rgba(138, 138, 138, 0.5) !important;
+}
+
+/* Labels on login */
+[data-testid="login-page"] label,
+[class*="login"] label {
+  color: #8a8a8a !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  font-size: 12px !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* ── Global Admin Theme ── */
+
+/* Brand color overrides */
+:root {
+  --fg-interactive: #2d6a4f !important;
+  --fg-interactive-hover: #40916c !important;
+  --fg-on-interactive: #ffffff !important;
+  --bg-interactive: #2d6a4f !important;
+}
+
+/* Heading font */
+h1, h2, h3 {
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* Body text font */
+body {
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* ── Buttons ── */
+
+/* Primary button — Fauna green */
+button[class*="primary"],
+[data-variant="primary"],
+button[data-variant="primary"] {
+  background-color: #2d6a4f !important;
+  border-color: #2d6a4f !important;
+  color: #ffffff !important;
+  font-family: 'Space Grotesk', sans-serif !important;
+  transition: all 0.3s ease !important;
+}
+
+button[class*="primary"]:hover,
+[data-variant="primary"]:hover,
+button[data-variant="primary"]:hover {
+  background-color: #1b4332 !important;
+  border-color: #1b4332 !important;
+  box-shadow: 0 4px 12px rgba(45, 106, 79, 0.25) !important;
+}
+
+button[class*="primary"]:active,
+[data-variant="primary"]:active {
+  background-color: #143d2b !important;
+  transform: translateY(1px) !important;
+}
+
+/* ── Focus States ── */
+*:focus-visible {
+  outline-color: #40916c !important;
+  outline-offset: 2px !important;
+}
+
+/* ── Sidebar ── */
+[data-active="true"] {
+  color: #40916c !important;
+}
+
+/* Sidebar hover */
+nav a:hover, nav button:hover {
+  color: #40916c !important;
+}
+
+/* ── Selection color ── */
+::selection {
+  background-color: rgba(45, 106, 79, 0.3) !important;
+  color: #f0f0f0 !important;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(44, 44, 44, 0.5);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2d6a4f;
+}

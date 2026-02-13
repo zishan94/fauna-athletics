@@ -71,7 +71,7 @@ export default function Hero() {
             >
               {[
                 { val: '100%', label: 'Echtleder' },
-                { val: 'Free', label: 'Versand ab 69.-' },
+                { val: 'Gratis', label: 'Versand ab 69.-' },
                 { val: '30d', label: 'Rückgabe' },
               ].map((b) => (
                 <div key={b.label}>
@@ -92,7 +92,7 @@ export default function Hero() {
         >
           <img
             src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=1200&q=80&auto=format"
-            alt="Boxing gloves"
+            alt="Boxhandschuhe"
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-fauna-black via-fauna-black/30 to-transparent" />

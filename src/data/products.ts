@@ -1,3 +1,8 @@
+export interface SizeGuide {
+  columns: string[]
+  rows: string[][]
+}
+
 export interface Product {
   id: string
   name: string
@@ -5,13 +10,19 @@ export interface Product {
   price: number
   originalPrice?: number
   tag?: string
-  category: 'gloves' | 'shorts' | 'tops' | 'bundles'
+  category: string
   image: string
   images: string[]
   colors: string[]
   sizes: string[]
   features: string[]
   description: string
+  /** Medusa product ID (when fetched from API) */
+  medusaId?: string
+  /** Medusa variants (when fetched from API) */
+  variants?: any[]
+  /** Per-product size guide (configured in Medusa admin) */
+  sizeGuide?: SizeGuide
 }
 
 export const products: Product[] = [
@@ -22,10 +33,9 @@ export const products: Product[] = [
     price: 129,
     tag: 'BESTSELLER',
     category: 'gloves',
-    image: 'https://fauna-athletics.ch/wp-content/uploads/2024/08/boxhanschuhe-fuer-anfaenger-und-sparring.png',
+    image: '/images/products/boxhandschuhe.png',
     images: [
-      'https://fauna-athletics.ch/wp-content/uploads/2024/08/boxhanschuhe-fuer-anfaenger-und-sparring.png',
-      'https://fauna-athletics.ch/wp-content/uploads/2024/08/N3-scaled-e1724327298628.jpg',
+      '/images/products/boxhandschuhe.png',
     ],
     colors: ['#1a1a1a', '#2d6a4f'],
     sizes: ['10oz', '12oz', '14oz', '16oz'],
@@ -39,9 +49,9 @@ export const products: Product[] = [
     price: 89,
     tag: 'NEU',
     category: 'gloves',
-    image: 'https://fauna-athletics.ch/wp-content/uploads/2024/08/grappling-handschuhe-grau-fuer-maenner-seitenansicht-weit.png',
+    image: '/images/products/mma-handschuhe.png',
     images: [
-      'https://fauna-athletics.ch/wp-content/uploads/2024/08/grappling-handschuhe-grau-fuer-maenner-seitenansicht-weit.png',
+      '/images/products/mma-handschuhe.png',
     ],
     colors: ['#555555', '#1a1a1a'],
     sizes: ['S', 'M', 'L', 'XL'],
@@ -54,9 +64,9 @@ export const products: Product[] = [
     subtitle: '2-teilig · 4-Way Stretch',
     price: 69,
     category: 'shorts',
-    image: 'https://fauna-athletics.ch/wp-content/uploads/2024/08/MMA-Fightshorts-scaled.jpg',
+    image: '/images/products/fight-shorts.jpg',
     images: [
-      'https://fauna-athletics.ch/wp-content/uploads/2024/08/MMA-Fightshorts-scaled.jpg',
+      '/images/products/fight-shorts.jpg',
     ],
     colors: ['#1a1a1a', '#2d3436'],
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -69,9 +79,9 @@ export const products: Product[] = [
     subtitle: 'Kompression · UV-Schutz',
     price: 59,
     category: 'tops',
-    image: 'https://fauna-athletics.ch/wp-content/uploads/2024/07/grappling-kleidung-scaled.jpg',
+    image: '/images/products/rashguard.jpg',
     images: [
-      'https://fauna-athletics.ch/wp-content/uploads/2024/07/grappling-kleidung-scaled.jpg',
+      '/images/products/rashguard.jpg',
     ],
     colors: ['#1a1a1a', '#2d6a4f'],
     sizes: ['S', 'M', 'L', 'XL'],
@@ -85,9 +95,9 @@ export const products: Product[] = [
     price: 49,
     originalPrice: 59,
     category: 'tops',
-    image: 'https://fauna-athletics.ch/wp-content/uploads/2024/08/MMA-Trainingstshirt-scaled.jpg',
+    image: '/images/products/raglan-tshirt.jpg',
     images: [
-      'https://fauna-athletics.ch/wp-content/uploads/2024/08/MMA-Trainingstshirt-scaled.jpg',
+      '/images/products/raglan-tshirt.jpg',
     ],
     colors: ['#1a1a1a', '#2d3436', '#f0f0f0'],
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
@@ -102,9 +112,10 @@ export const products: Product[] = [
     originalPrice: 128,
     tag: 'SPARE 15%',
     category: 'bundles',
-    image: 'https://fauna-athletics.ch/wp-content/uploads/2024/08/N3-scaled-e1724327298628.jpg',
+    image: '/images/products/fight-shorts.jpg',
     images: [
-      'https://fauna-athletics.ch/wp-content/uploads/2024/08/N3-scaled-e1724327298628.jpg',
+      '/images/products/fight-shorts.jpg',
+      '/images/products/rashguard.jpg',
     ],
     colors: ['#1a1a1a'],
     sizes: ['S', 'M', 'L', 'XL'],

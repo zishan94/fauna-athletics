@@ -1,0 +1,92 @@
+{
+  "storeConfig": {
+    "title": "Shop-Einstellungen",
+    "description": "Verwalte deine Shop-Einstellungen für Fauna Athletics",
+    "freeShippingThreshold": "Gratis-Versand ab",
+    "announcementText": "Ankündigungstext",
+    "contactEmail": "Kontakt-E-Mail",
+    "save": "Speichern",
+    "saved": "Gespeichert",
+    "saving": "Wird gespeichert..."
+  },
+  "analytics": {
+    "title": "Analyse-Dashboard",
+    "revenue": "Umsatz",
+    "orders": "Bestellungen",
+    "topProducts": "Top-Produkte",
+    "period": "Zeitraum",
+    "today": "Heute",
+    "week": "Diese Woche",
+    "month": "Dieser Monat",
+    "allTime": "Gesamt"
+  },
+  "general": {
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "create": "Erstellen",
+    "search": "Suchen",
+    "filter": "Filtern",
+    "export": "Exportieren",
+    "import": "Importieren",
+    "back": "Zurück",
+    "next": "Weiter",
+    "loading": "Wird geladen...",
+    "noResults": "Keine Ergebnisse",
+    "confirm": "Bestätigen",
+    "close": "Schliessen",
+    "yes": "Ja",
+    "no": "Nein",
+    "actions": "Aktionen",
+    "status": "Status",
+    "details": "Details",
+    "overview": "Übersicht",
+    "settings": "Einstellungen"
+  },
+  "orders": {
+    "title": "Bestellungen",
+    "order": "Bestellung",
+    "status": {
+      "pending": "Ausstehend",
+      "completed": "Abgeschlossen",
+      "canceled": "Storniert",
+      "archived": "Archiviert",
+      "requires_action": "Aktion erforderlich"
+    },
+    "fulfillment": {
+      "not_fulfilled": "Nicht erfüllt",
+      "partially_fulfilled": "Teilweise erfüllt",
+      "fulfilled": "Erfüllt",
+      "shipped": "Versendet",
+      "delivered": "Zugestellt",
+      "returned": "Retourniert"
+    },
+    "payment": {
+      "not_paid": "Nicht bezahlt",
+      "awaiting": "Ausstehend",
+      "captured": "Eingezogen",
+      "refunded": "Erstattet",
+      "partially_refunded": "Teilweise erstattet"
+    }
+  },
+  "products": {
+    "title": "Produkte",
+    "product": "Produkt",
+    "variant": "Variante",
+    "variants": "Varianten",
+    "inventory": "Inventar",
+    "price": "Preis",
+    "stock": "Lagerbestand",
+    "published": "Veröffentlicht",
+    "draft": "Entwurf"
+  },
+  "customers": {
+    "title": "Kunden",
+    "customer": "Kunde",
+    "email": "E-Mail",
+    "name": "Name",
+    "orders": "Bestellungen",
+    "registered": "Registriert"
+  }
+}

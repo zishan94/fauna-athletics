@@ -18,25 +18,25 @@ export default function Brand() {
             <div className="grid grid-cols-2 gap-3">
               <div className="space-y-3">
                 <div className="aspect-[3/4] overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1517438322307-e67111335449?w=600&q=80&auto=format" alt="Boxer training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="https://images.unsplash.com/photo-1517438322307-e67111335449?w=600&q=80&auto=format" alt="Boxer beim Training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="aspect-square overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&q=80&auto=format" alt="MMA training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&q=80&auto=format" alt="MMA-Training" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
               </div>
               <div className="pt-8 space-y-3">
                 <div className="aspect-square overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1583473848882-f9a5a4c8e532?w=400&q=80&auto=format" alt="Boxing gloves detail" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="https://images.unsplash.com/photo-1583473848882-f9a5a4c8e532?w=400&q=80&auto=format" alt="Boxhandschuhe Detail" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="aspect-[3/4] overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1615117950532-b25ec586f594?w=600&q=80&auto=format" alt="Athlete" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+                  <img src="https://images.unsplash.com/photo-1615117950532-b25ec586f594?w=600&q=80&auto=format" alt="Athlet" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
               </div>
             </div>
             {/* Floating stat */}
             <div className="absolute -bottom-4 -right-4 lg:right-auto lg:-left-4 glass px-6 py-4 z-10">
-              <p className="font-heading text-3xl text-fauna-accent">Since 2024</p>
-              <p className="text-[10px] uppercase tracking-[0.3em] text-fauna-muted">Zürich, Switzerland</p>
+              <p className="font-heading text-3xl text-fauna-accent">Seit 2024</p>
+              <p className="text-[10px] uppercase tracking-[0.3em] text-fauna-muted">Zürich, Schweiz</p>
             </div>
           </motion.div>
 
@@ -73,7 +73,7 @@ export default function Brand() {
             <div className="grid grid-cols-3 gap-4">
               {[
                 { icon: '🥊', title: 'Von Athleten', desc: 'Entwickelt von aktiven Kampfsportlern' },
-                { icon: '🇵🇹', title: 'Made in Portugal', desc: 'Höchste europäische Standards' },
+                { icon: '🇵🇹', title: 'Hergestellt in Portugal', desc: 'Höchste europäische Standards' },
                 { icon: '🌱', title: 'Nachhaltig', desc: 'Fair & umweltbewusst produziert' },
               ].map((v, i) => (
                 <motion.div

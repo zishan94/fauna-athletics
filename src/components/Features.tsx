@@ -4,9 +4,9 @@ import { Gem, Zap, Shirt, Droplets, Mountain, Leaf } from 'lucide-react'
 
 const features = [
   { icon: Gem, title: 'Echtes Leder', desc: 'Premium-Rindsleder für unübertroffenen Grip und Haltbarkeit.', num: '01' },
-  { icon: Droplets, title: 'Moisture Wicking', desc: '3x schnellere Feuchtigkeitsableitung als Standard-Materialien.', num: '02' },
+  { icon: Droplets, title: 'Feuchtigkeitsableitung', desc: '3x schnellere Feuchtigkeitsableitung als Standard-Materialien.', num: '02' },
   { icon: Shirt, title: 'Perfekte Passform', desc: '360° Bewegungsfreiheit — kein Verrutschen, kein Einengen.', num: '03' },
-  { icon: Zap, title: 'Max Performance', desc: 'Hochfunktionale Materialien für dein bestes Training.', num: '04' },
+  { icon: Zap, title: 'Maximale Leistung', desc: 'Hochfunktionale Materialien für dein bestes Training.', num: '04' },
   { icon: Mountain, title: 'Unzerstörbar', desc: 'Intensive Belastungstests garantieren maximale Haltbarkeit.', num: '05' },
   { icon: Leaf, title: 'Nachhaltig', desc: 'Fair und umweltbewusst in Portugal produziert.', num: '06' },
 ]

@@ -11,7 +11,7 @@ export default function CTA() {
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=1600&q=80&auto=format"
-          alt="Background"
+          alt="Hintergrund"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-fauna-black/80" />
@@ -24,14 +24,14 @@ export default function CTA() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
-          <span className="text-[11px] uppercase tracking-[0.5em] text-fauna-accent mb-5 block">Join the Pack</span>
+          <span className="text-[11px] uppercase tracking-[0.5em] text-fauna-accent mb-5 block">Werde Teil des Rudels</span>
           <h2 className="font-heading text-5xl md:text-7xl lg:text-8xl tracking-[0.02em] leading-[0.88] mb-6">
             WERDE TEIL<br />
             <span className="gradient-text">DES RUDELS.</span>
           </h2>
           <p className="text-fauna-muted text-base leading-relaxed max-w-lg mx-auto mb-10">
             Melde dich für unseren Newsletter an und erhalte 10% auf deine erste Bestellung. 
-            Plus: exklusive Drops, Behind-the-Scenes und mehr.
+            Plus: exklusive Drops, Einblicke hinter die Kulissen und mehr.
           </p>
 
           {/* Email signup */}
